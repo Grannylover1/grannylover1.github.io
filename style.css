@@ -1,53 +1,60 @@
-body {
-    width: calc(100vw - 40px);
-    max-width: 1200px;
-    margin: auto;
-    margin-bottom: 40pt;
-    }
 
-    body{
-    font-family:"Noto Sans", sans-serif;
-    color: #ffffff;
+ 
+ body {
+        width: calc(100vw - 40px);
+        max-width: 1200px;
+        margin: auto;
+        margin-bottom: 40pt;
 
-    background-color: #0d1117;
-    }
+        font-family:"Noto Sans", sans-serif;
+        color: #ffffff;
 
-    body {
-    animation: fadeInAnimation ease 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    }
+        background-color: #0d1117;
+        }
 
-    @keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-    }
+        section {
+            display: grid;
+            place-items: center;
+            align-content: center;
+            min-height: 100vh;
+            font-size: 3rem;
+        }
 
-    footer{
-        padding: 40px;
-        text-align: center;
-    }
-
-    a, a:visited {
-        color: #626064;
-        text-decoration: none;
-       
-    }
+        .hidden {
+            opacity: 0;
+            filter: blur(5px);
+            transform: translateX(-100%);
+            transition: all 1s ;
+            }
     
-    a:hover {
-        font-weight: bolder;
-        transition: 130ms linear;
-    }
+        .show {
+            opacity: 1;
+            filter: blue(0);
+            transform: translateX(0);
+        }
 
-    .jamal{
-        color: #273447;
-    }
 
-    .underline{
-        display: inline;
-        border-bottom: 3px dotted #273447;
-    }
+        footer{
+            padding: 40px;
+            text-align: center;
+        }
+
+        a, a:visited {
+            color: #626064;
+            text-decoration: none;
+           
+        }
+        
+        a:hover {
+            font-weight: bolder;
+            transition: 130ms linear;
+        }
+
+        .jamal{
+            color: #273447;
+        }
+
+        .underline{
+            display: inline;
+            border-bottom: 3px dotted #273447;
+        }
