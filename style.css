@@ -31,9 +31,11 @@
         .first{
             background-color:  rgb(49, 29, 75);
         }
+        
         .second{
             background-color: rgb(34, 63, 62);
         }
+
         .third{
             background-color: rgb(2, 17, 66);
         }
@@ -49,7 +51,7 @@
             box-shadow: 2px 4px 5px 
             rgba(0, 0, 0, 0.3);
             transform: translateX(-400%);
-            transition: transform 4s ease;
+            transition: transform 3s ease;
         }
 
         .box:nth-of-type(even){
@@ -61,23 +63,11 @@
             transform: translateX(0)
         }
 
-
         .box p{
             font-size: 35px;
             text-align: center;
         }
         
-        @keyframes slide-from-bottom {
-            0% {
-                transform: translateY(-200%);
-                opacity: 0;
-            }
-            100% {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        } 
-
         .hyperlink{
             text-align: bottom;
             font-size: 25px;
@@ -108,22 +98,23 @@
         }
 
         :root {
-            --purple: rgb(64, 38, 99);
-            --violet: rgb(42, 0, 156);
-            --blue: rgb(18, 13, 48);        
+            --purple: #402663;
+            --violet: #180351;
+            --blue: #23137f;        
         }
 
-        @keyframes background-pan{
-            from {
-                background-position: 0% center
+        @keyframes slide-from-top {
+            0% {
+                transform: translateY(-200%);
+                opacity: 0;
             }
-            to {
-                background-position: -200% center;
+            100% {
+                transform: translateY(0);
+                opacity: 1;
             }
-        }
+        } 
 
         .magic {
-            animation: background-pan 3s linear infinite;
             background-image: linear-gradient(61deg, var(--purple), var(--violet), var(--blue));
             -webkit-background-clip: text;
             -moz-background-clip: text;
@@ -133,7 +124,7 @@
 
             background-size: 200%;
 
-            animation: slide-from-bottom 2s linear;
+            animation: slide-from-top 2s linear;
 
         }
     

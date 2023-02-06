@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@700&display=swap');
+
+body{
+    color: aliceblue;
+    font-family: 'Arimo', sans-serif;
+    background-color: #0d1117;
+    text-align: center;
+    margin-top: 20pt;
+}
+
+body {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+footer{
+    margin-top: 30pt;
+}
+  
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+input:focus{
+    outline: none;
+}
+
+input{
+    color: aliceblue;
+    background-color: #0d1117;
+    border-radius: 10px;
+    border: 2px aliceblue solid;
+    padding: 3px;
+    padding-left:10px;
+    display: inline-block
+}
+
+input:hover{
+    transition: 170ms linear;
+    border: 4px aliceblue solid;
+}
+
+
+a, a:visited {
+    color: #626064;
+    text-decoration: none;
+   
+}
+
+a:hover {
+    font-weight: bolder;
+    transition: 130ms linear;
+}
+
+.jamal{
+    color: #273447;
+}
+
+.home{
+    align-items: center;
+    min-width: 70px;
+    min-height: 26px;
+    border-radius: 13px;
+    border: solid 1px #273447;
+    padding: 15px;
+    font-size: 16px;
+    transition: 130ms;
+}
+
+.home:hover{
+    border: solid 3px #273447;
+    padding: 20px;
+    font-size: 18px;
+    transition: 130ms linear;
+}
+
+li {
+    margin: auto;
+    list-style-type: none;
+}
+
+div {
+    user-select: none;
+}
+
+footer {
+    user-select: none;
+}
+
+button {
+    border-radius: 4px;
+    background-color: #0d1117;
+    color: aliceblue;
+    outline: none;
+    border: 2px aliceblue solid;
+}
